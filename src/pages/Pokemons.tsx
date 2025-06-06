@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 import BulbasaurPic from "../assets/bulbasaur.gif"
+import styles from "./pokemons.module.css"
 
 const Pokemons = () => {
 
@@ -16,9 +17,9 @@ const Pokemons = () => {
 
   <main>
    <nav>
-    <Link to="/">
-      <img src={BulbasaurPic} alt="bulbasaur" />
-      <div>
+    <Link className={styles.listItem} to="/">
+      <img className={styles.listItemIcon} src={BulbasaurPic} alt="bulbasaur" />
+      <div className={styles.listItemText}>
       <span>Bulbasaur</span>
       <span>001</span>
       </div>
