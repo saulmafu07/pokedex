@@ -12,7 +12,7 @@ import styles from "./footer.module.css"
 const Footer = () => {
   return (
    <footer className={styles.footer}>
-    <Link className={styles.footerLink} to="/pokemons">
+    <Link className={styles.footerLink}  to="/pokemons">
       <img className={styles.footerIcon} src={PokemonPic} alt="Pokeball" />
       Pokemons
     </Link>
