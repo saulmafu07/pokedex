@@ -2,9 +2,10 @@
 
 import { error } from "console";
 import { formatName } from "../utils/utils";
+import { Pokemon } from "../types/types.d";
 
 
-export async function fetchPokemons() {
+export async function fetchPokemons():Promise<Pokemon[]> {
     const response = await fetch(
         "http://unpkg.com/pokemons@1.1.0/pokemons.json"
     );
